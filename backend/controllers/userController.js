@@ -57,6 +57,7 @@ const loginUser = asyncHandler(async (req, res) => {
         _id: checkUser._id,
         username: checkUser.username,
         email: checkUser.email,
+        isAdmin: checkUser.isAdmin,
       });
       return;
     }
